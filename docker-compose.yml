@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  myjen:
+    image: jenkins/jenkins
+    ports:
+      - "2000:8080"
+  qaserver:
+    image: tomee
+    ports:
+      - "3000:8080"
+  prodserv:
+    image: tomee
+    ports:
+      - "4000:8080"
+       
